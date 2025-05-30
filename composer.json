@@ -1,6 +1,6 @@
 {
-    "name": "task-schedule/imap",
-    "description": "task-schedule/imap",
+    "name": "thangndimap/task-schedule",
+    "description": "thangndimap/task-schedule",
     "autoload": {
         "psr-4": {
             "TaskSchedule\\": "src/"
