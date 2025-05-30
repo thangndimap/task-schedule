@@ -1,7 +1,7 @@
 <?php
 namespace TaskSchedule;
 
-class Systems
+class Schedule
 {
     public function create($data)
     {
