@@ -1,0 +1,15 @@
+{
+    "name": "8xprovn/task-schedule",
+    "autoload": {
+         "psr-4": {
+             "TaskSchedule\\": "src/"
+         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TaskSchedule\\ScheduleServiceProvider"
+            ]
+        }
+    }
+}
