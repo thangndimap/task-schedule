@@ -35,12 +35,14 @@ class ScheduleServiceProvider extends ServiceProvider
                             if ($task['type'] === 'event') {
                                 $event = $task['schedule_name'] ?? '';
                                 if (!empty($event)) {
-                                    $micro->event()->BusEvent($event, $task);
+                                    $dataEvent = array_merge($task, $task['data']??[]);
+                                    $micro->event()->BusEvent($event, $dataEvent);
                                 }
                             } elseif ($task['type'] === 'job') {
                                 $jobClass = $task['schedule_name'] ?? '';
                                 if (!empty($jobClass)) {
-                                    $micro->job()->BusJob($jobClass, $task)->onQueue(config('app.service_code'));
+                                    $dataJob = array_merge($task, $task['data']??[]);
+                                    $micro->job()->BusJob($jobClass, $dataJob)->onQueue(config('app.service_code'));
                                 }
                             }
 
