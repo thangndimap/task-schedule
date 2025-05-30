@@ -1,9 +1,10 @@
 {
-    "name": "8xprovn/task-schedule",
+    "name": "task-schedule/imap",
+    "description": "task-schedule/imap",
     "autoload": {
-         "psr-4": {
-             "TaskSchedule\\": "src/"
-         }
+        "psr-4": {
+            "TaskSchedule\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
